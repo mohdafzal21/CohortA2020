@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+ th,td {
+     padding:10px;
+     border:  2px solid red;
+ }
+</style>
+<body>
+    <h1>Table</h1>
+    <table style="border : 2px solid black">
+        <tr >
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr >
+         <td>A1 - Row1 Column 1</td>
+         <td>B2 - Row1 Column 2</td>
+         <td>C3 - Row 1 Column 3</td>
+        </tr>
+        <tr >
+        <td>
+                D- Row2 Column 1
+        </td>
+        <td>
+            E - Row2 Column 2
+         </td>
+         <td>
+            F - Row2 Column 3
+         </td>
+
+    
+    </tr>
+    <tr>
+        <td colspan="3"> Column Span </td>
+    </tr>
+    <tr>
+        <td colspan="2">Row columns 1-2</td>
+        <td> Row Colun3</td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">Rows 1-2 Columns 1-2</td>
+        <td>Row 1 Column 3</td>
+    </tr>
+    <tr>
+        <td>Row2 Column3</td>
+    </tr>
+    </table>
+    <hr>
+    <table style="border:2px solid yellow">
+        <caption>Data Table</caption>
+        <thead>
+                <tr>
+                    <th></th>
+                    <th>Coulmn 2</th>
+                    <th>Column 3</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Row 1</th>
+                <td>Col2</td>
+                <td>Col 3</td>
+            </tr>
+            <tr>
+                <th>Row 2</th>
+                <td>Col 2</td>
+                <td>Col 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Footer of Col 2</td>
+                <td>Footer of Col3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="https://google.com">
+          <input required pattern="[a-zA-Z]{8}" type="text" name="username" placeholder="enter the username" >
+          <input  type="email" name="email" placeholder="enter email" required>
+          <input type="number" value="18" name="age" placeholder="enter age" min="10" max="100">
+          <input type="password" name="password" placeholder="enter password">
+          <input type="hidden" name="confirmpassword" value="token :2341354123132" >
+          <button type="submit">submit</button>
+          &copy;
+    </form>
+    <hr>
+    <h1>File Uploads</h1>
+    <div>
+    <!-- <div style="background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAY1BMVEX///9KwUREwD3F6sOK1Yc+vjdHwEH8/vzu+e5YxVI6vTO04rLn9ued25q047HW8NW75rmC0n9cxleO1YtiyV33/PdqymbR7tDJ68eg2550zXBRw0yT15Hd89zi9OG/576s4Kpr7K95AAADaklEQVR4nO1a2XajMAwtBhswhEBYAiQt/f+vLMzEQCleWTTT4/vQlzrWRZJlSdbbm4WFhYWFHoLaFaIOjpVfZhgJQbPySPl+hR0JaOUfJ7+Uy3ccXB2mg17/cvk9g+wgP1CUPzA4RAd+qyi/Z9Ae4AdK9h8Z7O8HQUbV5fdnYW8/ULb/qIN9/UDD/iMDYz8o79HTWyBEuvIdB4XLXZ7RXa6W8rMgFC9B9OU7DvmxDSXFp4TCe0uNhCmTou27SP7VMdC1HpBz5cuPzXStB4JjLoH28O8fgFqe/LtWrDEHva/L971TFNCHCG89RASPEzxgAAnX4/T1JPk9g/WDUJ9kgd4N61UC7nkEXEvgdxAgqL/femCMNM/PDgT6qxYVWZOkrpsmTVYQrSt7MwGEb3n3MQtnftw9b1j999sIEFRFwc9gGqSVqim2EaBhx8lqSvemdp1tIYBwsy79LxolO2wggCtBPjPgqlK/mBPAnrTeCDw5A2MClHORf4PvSR3BlAD1Fh9bR5c8v0TLtoxUB4YEvicycVIMqT5Cw98imSeavoyBGQFUzT40voR0thzR8DKjEFSSrYwI4Jn/p+Ey8hL8SKf/X8UqMCJAp/Nf5mvlE6H5FKAaoSOaECDhpOCWszttJyOFoqhsQgB34/fzS3XcjjroREYwIICmnksu0C7NR5oiPzQggCO2KhVal46KSgUq0CdAbsy6sbh6IQ92GoMbf6E+ATSq9iKJMfjyWujn/JX6BEYXjIXe7QynhalA4IYGJmC7JtKLhiavpR8CheoSIAW7BQrpjYkKZoOCqyxtAih7LQlUuuXMXzP+froExjSsViHAKs+Gu1ifALNrpEKAhYxkPwKUXXSyQ/iHADuI/JClT4D9IFfJW59sv99EANoE4E4IfgzBAxF4KAa/jOCvY/CEZJaSiVVwVEoGnpTCp+WzwkTwhjgvTESb/ZelmVJxOvUP9i9OFcrzbvr/EeU5fIMCvEUzMPj+g7ObVMNYAmybDr5RCd+qhW9WO8J2fRce3653hpiz9mDhx2ml+mxzyJNNHp72ZDMA+NHqRQLy2W4bLIF/lQD4AAP4CAf4EIs0kdkLvDEe8EEm+FEu+GG2U8b5HsKcCnqgsc9qkrWRzp1ASZEoTJWuDLXuA6WhVgsLCwsLCwsLC4vT8QWHekh1Hk55VAAAAABJRU5ErkJggg==);"></div> -->
+    <input type="file" name="secret-documnet">
+    <input type="file" name="dix" multiple accept="imgae/*">
+  <input type="file"  name="docs0" accept=".jpg, .jpeg, .png">
+  <input type="button" value="click me">
+</div>
+<div>
+    <input type="radio" name="color1" value="yellow">
+    <input type="radio" name="color" value="red">
+    <input type="radio" name="color" value="blue">
+    <input type="checkbox" name="color" value="yellow">
+    <input type="checkbox" name="color" value="red">
+    <input type="checkbox" name="color" value="blue">
+    <input type="date">
+</div>
+<div>
+    <h2><code>time</code></h2>
+    <input type="time">
+</div>
+<div>
+    <h2><code>month</code></h2>
+    <input type="month">
+</div>
+<div>
+    <h2><code>week</code></h2>
+    <input type="week">
+</div>
+<div>
+    <h2><code>Date time-local</code></h2>
+    <input type="datetime-local">
+</div>
+<div>
+    <h2><code>Telerphone</code></h2>
+    <input pattern="[0-9]{10}" type="tel" name="telephone number">
+</div>
+<!-- <div>
+    <textarea rows="20" columns="10"></textarea>
+</div> -->
+<!-- <div>
+    <select  name="color">
+        <option value="red" disabled>Red</option>
+        <option value="blue">Blue</option>
+    </select>
+</div> -->
+<div>
+    <select name="color">
+        <optgroup label="Primary">
+            <option value="red" >Red</option>
+            <option value="blue">Blue</option>
+        </optgroup>
+        <optgroup label="Secondary">
+            <option value="green" >green</option>
+            <option value="pink">pink</option>
+        </optgroup>
+    </select>
+</div>
+<form>
+    <input value="username">
+</form>
+</body>
+</html>
