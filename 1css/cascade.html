@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color :yellow;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            border : 2px solid red;
+            color: blue;
+            background-color: unset;
+            font-size : 20px !important;
+        }
+        .dog-name{
+            color : red
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Cascade</h1>
+    <p>is the process,that determines 
+        the properties applied to each element on page</p>
+    <ul>
+        <li>specificity</li>
+        <li>importance</li>
+        <li>inheritance</li>
+        <li>order in the file</li>
+    </ul>
+    <div>
+        <h1>specificity</h1>
+        <p>What happens when an element is targeted by multiple rules</p>
+        <p class="dog-name">
+          Tom  
+        </p>
+    </div>
+</body>
+</html>

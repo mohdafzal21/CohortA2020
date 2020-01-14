@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Elements</title>
+    <style>
+    /* p::first-letter{
+        font-size: 2rem;
+        color: red;
+    } */
+    p::first-letter{
+        font-weight: bolder;
+        color:royalblue;
+    }
+    span[id]{
+        color: red;
+    }
+    h3[id="my-id"]{
+        color: royalblue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements are used to style a specific part of an element</h1>
+
+    they start with a double colon => ::
+
+    <li>:: before => creates a pseudo-element before element</li>
+    <li>::after => creates a pseudo-element after the element</li>
+    <li>::first-letter => to apply style to first letter of block or text</li>
+    <li>::first-line => apply style to first line of block or text</li>
+
+    <p>
+        Hello All this is very boring
+    </p>
+    <p class="next-line">
+        This is CSS
+    </p>
+    <div>
+        <span id="p-id">hello Attribute Presence Selector</span>
+    </div>
+    <h3 id="my-id">Exact Attribute Value Selector</h3>
+</body>
+</html>

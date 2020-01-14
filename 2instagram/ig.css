@@ -1,0 +1,60 @@
+body{
+    background-color: #dddddd;
+}
+.header{
+    background: white;
+    color : #333333;
+    left: 0;
+    right: 0;
+    top:0;
+}
+.header-content {
+    display: flex;
+    max-width: 930px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav ul{
+     list-style: none;
+     margin :0 ;
+     padding: 0;
+}
+.main-nav ul li {
+    display: inline-block
+}
+
+.user-info{
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 150px;
+    border-radius: 50%;
+    justify-self: center;
+
+}
+.feed-nav{
+    text-align: center;
+    padding: 5px;
+}
+
+.feed-nav a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.news-feed{
+    border: 3px dashed blue;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+
+}
+
+.news-feed img{
+    width: 100%;
+   
+}
