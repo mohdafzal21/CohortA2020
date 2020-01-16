@@ -1,8 +1,26 @@
 if (!Object.is || true) {
-	Object.is = function ObjectIs(x, y) {
+	Object.is = function ObjectIs(a, b) {
 		//write here
-	   
+		 var xNegZero = isItNegZero(a)
+		 var yNegZero = isItNegZero(b)
+		 if(xNegZero || yNegZero){
+			 return xNegZero && yNegZero
+		 }else if (isItNan(a) && isItNan(b)){
+			 return true
+		 }else if (a === b){
+			 return true
+		 }else{
+			return false
 
+		 }
+
+		//****** */
+		function isItNan(x){
+				return x !==x ;
+		}
+		function isItNegZero (x){
+			return x ===0  && 1/x === -Infinity
+		}
 	};
 }
 
